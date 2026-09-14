@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskZen Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="interns.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo-icon"><i class="fas fa-check"></i></div>
+        <h2>TaskZen</h2>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#" class="nav-item active"><i class="fas fa-home"></i> Home</a>
+        <a href="#" class="nav-item"><i class="far fa-calendar-alt"></i> Today <span class="badge">3</span></a>
+        <a href="#" class="nav-item"><i class="fas fa-list-ul"></i> All Tasks</a>
+        <a href="#" class="nav-item"><i class="far fa-check-circle"></i> Completed</a>
+      </nav>
+
+      <div class="categories">
+        <p class="section-label">CATEGORIES</p>
+        <a href="#"><span class="dot work"></span> Work</a>
+        <a href="#"><span class="dot personal"></span> Personal</a>
+        <a href="#"><span class="dot study"></span> Study</a>
+        <a href="#"><span class="dot health"></span> Health</a>
+        <a href="#"><span class="dot others"></span> Others</a>
+      </div>
+
+      <div class="sidebar-card">
+        <i class="fas fa-seedling card-icon"></i>
+        <h4>Small steps make big progress</h4>
+        <p>You're doing great! Keep going.</p>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      
+      <!-- TOP HEADER -->
+      <header class="top-header">
+        <div></div>
+        <div class="user-profile">
+          <i class="far fa-sun theme-toggle"></i>
+          <img src="https://i.pravatar.cc/100?img=47" alt="User Avatar" class="avatar">
+          <span class="user-name">Gifty <i class="fas fa-chevron-down"></i></span>
+        </div>
+      </header>
+
+      <!-- WELCOME HERO -->
+      <section class="welcome-hero">
+        <p class="greeting">Good morning, 👋</p>
+        <h1>Let's get things done!</h1>
+        <p class="subtitle">Stay organized, stay productive, and make today count.</p>
+      </section>
+
+      <!-- ADD TASK BAR -->
+      <div class="add-task-bar">
+        <div class="input-wrapper">
+          <button class="add-btn-icon"><i class="fas fa-plus"></i></button>
+          <input type="text" placeholder="Add a new task...">
+        </div>
+        <div class="category-select">
+          <span>Work</span> <i class="fas fa-chevron-down"></i>
+        </div>
+        <button class="submit-btn">Add</button>
+      </div>
+
+      <!-- STATS CARDS -->
+      <section class="stats-grid">
+        <div class="stat-card purple">
+          <div class="stat-icon"><i class="fas fa-clipboard-list"></i></div>
+          <h3>5</h3>
+          <p>Total Tasks</p>
+        </div>
+        <div class="stat-card green">
+          <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+          <h3>2</h3>
+          <p>Completed</p>
+        </div>
+        <div class="stat-card orange">
+          <div class="stat-icon"><i class="far fa-clock"></i></div>
+          <h3>3</h3>
+          <p>Pending</p>
+        </div>
+        <div class="stat-card pink">
+          <div class="stat-icon"><i class="far fa-calendar"></i></div>
+          <h3>3</h3>
+          <p>Due Today</p>
+        </div>
+      </section>
+
+      <!-- TASKS SECTION -->
+      <section class="tasks-container">
+        <div class="tasks-header">
+          <h2>My Tasks</h2>
+          <div class="filter-tabs">
+            <button class="tab active">All</button>
+            <button class="tab">Active</button>
+            <button class="tab">Completed</button>
+          </div>
+        </div>
+
+        <ul class="task-list">
+          <li class="task-item completed">
+            <div class="task-left">
+              <input type="checkbox" checked>
+              <span class="task-text">Finish the project documentation</span>
+              <span class="tag study">Study</span>
+            </div>
+            <div class="task-right">
+              <span class="due-date"><i class="far fa-calendar"></i> Today</span>
+              <i class="fas fa-ellipsis-h dots"></i>
+            </div>
+          </li>
+
+          <li class="task-item completed">
+            <div class="task-left">
+              <input type="checkbox" checked>
+              <span class="task-text">Go for a morning walk</span>
+              <span class="tag health">Health</span>
+            </div>
+            <div class="task-right">
+              <span class="due-date"><i class="far fa-calendar"></i> Today</span>
+              <i class="fas fa-ellipsis-h dots"></i>
+            </div>
+          </li>
+
+          <li class="task-item">
+            <div class="task-left">
+              <input type="checkbox">
+              <span class="task-text">Attend team meeting</span>
+              <span class="tag work">Work</span>
+            </div>
+            <div class="task-right">
+              <span class="due-date"><i class="far fa-calendar"></i> Today</span>
+              <i class="fas fa-ellipsis-h dots"></i>
+            </div>
+          </li>
+
+          <li class="task-item">
+            <div class="task-left">
+              <input type="checkbox">
+              <span class="task-text">Read a book for 30 minutes</span>
+              <span class="tag personal">Personal</span>
+            </div>
+            <div class="task-right">
+              <span class="due-date"><i class="far fa-calendar"></i> Tomorrow</span>
+              <i class="fas fa-ellipsis-h dots"></i>
+            </div>
+          </li>
+
+          <li class="task-item">
+            <div class="task-left">
+              <input type="checkbox">
+              <span class="task-text">Update portfolio website</span>
+              <span class="tag work">Work</span>
+            </div>
+            <div class="task-right">
+              <span class="due-date"><i class="far fa-calendar"></i> Tomorrow</span>
+              <i class="fas fa-ellipsis-h dots"></i>
+            </div>
+          </li>
+
+          <li class="task-item">
+            <div class="task-left">
+              <input type="checkbox">
+              <span class="task-text">Plan next week's goals</span>
+              <span class="tag personal">Personal</span>
+            </div>
+            <div class="task-right">
+              <span class="due-date"><i class="far fa-calendar"></i> Aug 24, 2025</span>
+              <i class="fas fa-ellipsis-h dots"></i>
+            </div>
+          </li>
+
+          <li class="task-item">
+            <div class="task-left">
+              <input type="checkbox">
+              <span class="task-text">Grocery shopping</span>
+              <span class="tag others">Others</span>
+            </div>
+            <div class="task-right">
+              <span class="due-date"><i class="far fa-calendar"></i> Aug 25, 2025</span>
+              <i class="fas fa-ellipsis-h dots"></i>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- QUOTE BANNER -->
+      <div class="quote-banner">
+        <i class="fas fa-quote-left quote-icon"></i>
+        <div class="quote-content">
+          <p>"Discipline is the bridge between goals and achievement."</p>
+          <span>— Jim Rohn</span>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2025 TaskZen. All rights reserved.</p>
+      </footer>
+
+    </main>
+  </div>
+</body>
+</html>
