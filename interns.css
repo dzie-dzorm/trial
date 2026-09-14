@@ -110,11 +110,21 @@ body {
   border-radius: 50%;
 }
 
-.dot.work { background-color: #2563eb; }
-.dot.personal { background-color: #10b981; }
-.dot.study { background-color: #f59e0b; }
-.dot.health { background-color: #ec4899; }
-.dot.others { background-color: #64748b; }
+.dot.work { 
+  background-color: #2563eb; 
+}
+.dot.personal { 
+  background-color: #10b981; 
+}
+.dot.study { 
+  background-color: #f59e0b; 
+}
+.dot.health { 
+  background-color: #ec4899; 
+}
+.dot.others { 
+  background-color: #64748b; 
+}
 
 .sidebar-card {
   margin-top: auto;
@@ -265,19 +275,35 @@ body {
   gap: 8px;
 }
 
-.stat-card.purple { background-color: #f3e8ff; }
-.stat-card.green { background-color: #d1fae5; }
-.stat-card.orange { background-color: #fef3c7; }
-.stat-card.pink { background-color: #ffe4e6; }
+.stat-card.purple { 
+  background-color: #f3e8ff; 
+}
+.stat-card.green { 
+  background-color: #d1fae5; 
+}
+.stat-card.orange { 
+  background-color: #fef3c7; 
+}
+.stat-card.pink { 
+  background-color: #ffe4e6; 
+}
 
 .stat-icon {
   font-size: 1.2rem;
 }
 
-.stat-card.purple .stat-icon { color: #8b5cf6; }
-.stat-card.green .stat-icon { color: #10b981; }
-.stat-card.orange .stat-icon { color: #f59e0b; }
-.stat-card.pink .stat-icon { color: #f43f5e; }
+.stat-card.purple .stat-icon { 
+  color: #8b5cf6; 
+}
+.stat-card.green .stat-icon { 
+  color: #10b981; 
+}
+.stat-card.orange .stat-icon { 
+  color: #f59e0b; 
+}
+.stat-card.pink .stat-icon { 
+  color: #f43f5e; 
+}
 
 .stat-card h3 {
   font-size: 1.5rem;
@@ -314,7 +340,7 @@ body {
 
 .tab {
   border: none;
-  background: transparent;
+  background-color: #b2b9c2;
   padding: 6px 16px;
   border-radius: 16px;
   font-size: 0.85rem;
