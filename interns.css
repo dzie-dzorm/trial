@@ -31,6 +31,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
+  font-size: 0.95rem;
 }
 
 .logo-icon {
@@ -163,6 +164,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .user-profile {
@@ -355,7 +357,7 @@ body {
 }
 
 .task-list {
-  list-style: none;
+  
   display: flex;
   flex-direction: column;
   gap: 12px;
