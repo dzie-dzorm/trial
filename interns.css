@@ -18,12 +18,13 @@ body {
 /* SIDEBAR */
 .sidebar {
   width: 260px;
+  padding: 12px 16px;
   background-color: #ffffff;
-  padding: 24px;
+  
   display: flex;
   flex-direction: column;
   gap: 28px;
-  border-right: 1px solid #e2e8f0;
+  border-right: 5px solid #e2e8f0;
 }
 
 .brand {
@@ -59,10 +60,8 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 12px 16px;
   text-decoration: none;
   color: #64748b;
-  font-weight: 500;
   border-radius: 8px;
   transition: 0.2s;
 }
@@ -157,6 +156,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
+
 }
 
 .top-header {
@@ -339,8 +339,8 @@ body {
 }
 
 .tab {
-  border: none;
-  background-color: #b2b9c2;
+  border: 10px;
+  background-color: #f3f4f5;
   padding: 6px 16px;
   border-radius: 16px;
   font-size: 0.85rem;
@@ -419,12 +419,16 @@ body {
 
 /* QUOTE BANNER */
 .quote-banner {
-  background-color: #eef2ff;
-  padding: 20px 24px;
+  background-color: #dbdfee;
+  padding: 15px 20px;
   border-radius: 14px;
   display: flex;
   align-items: center;
   gap: 16px;
+}
+.heart{
+  margin-left: 400px;
+  font-size: 30px;
 }
 
 .quote-icon {
